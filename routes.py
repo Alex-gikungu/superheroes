@@ -73,7 +73,6 @@ def update_power(id):
         power.description = new_description
         db.session.commit()
 
-        # Construct the response JSON with the requested format
         response_data = {
             'id': power.id,
             'name': power.name,
